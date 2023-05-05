@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8"/>
+    <body>
+        
+        <h2>Colocando conteúdo em nossa tag de texto</h2>
+
+        <p id="teste01"></p>
+
+        <script>
+            document.getElementById("teste01").innerHTML = "Olá, meus amores! Como vocês estão?";
+        </script>
+        <!---->
+
+        <h1>JAVASCRIPT</h1>
+        <h2>Vitória Williams de Andrade</h2>
+        <p>Vamos mudar os atributos de nossa página.</p>
+        <p>Com o nosso javascript, vamos mudar os valores do atributo src para trocar link da imagem.</p>
+
+        <button onclick="document.getElementById('imagem01').src='aula12/imagens/js.png'">Botão Ligar</button>
+        <img id="imagem01" src="../imagens/js.png" style="width:100px">
+        <button onclick="document.getElementById('imagem01').src='../imagens/'">Botão Desligar</button>
+        <!---->
+
+        <h2>O que podemos fazer mais?</h2>
+
+        <p id="teste03">Vamos acrescentar conteudo aqui.</p>
+
+        <button type="button" onclick='document.getElementById("teste03").innerHTML = "Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. uem num gosta di mim que vai caçá sua turmis!Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Copo furadis é disculpa de bebadis, arcu quam euismod magna."'
+        >Clique para mostrar o conteúdo!</button>
+
+        <!---->
+        <h2>Vamos alterar o estilo de uma página com uma ação</h2>
+        <p id="teste04">Com o JavaScript podemos alterar o estilo de um texto.</p>
+        <button type="button" onclick="document.getElementById('teste04').style.fontSize='85px'">Mágica!</button>
+
+        <!---->
+        <h2>Vamos alterar o estilo de uma página com uma ação</h2>
+        <p id="teste04">Com o JavaScript podemos alterar o estilo de um texto.</p>
+        <button type="button" onclick="document.getElementById('teste04').style.fontSize='85px'">Mágica!</button>
+
+
+        <!---->
+        <h2>Vamos esconder elemento mudando o valor de seu atributo</h2>
+        <p id="teste05">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. 
+            uem num gosta di mim que vai caçá sua turmis!Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. 
+            Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+
+        <button type="button" onclick="document.getElementById('teste05').style.display='none'">Mágica</button>
+        
+
+        <!---->
+        <h2>Se escondemos o texto em nossa página, podemos fazer aparecer!</h2>
+
+        <p>JavaScript can show hidden HTML elements</p>
+
+        <p id="teste06" style="display:none">Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. 
+            uem num gosta di mim que vai caçá sua turmis!Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. 
+            Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>
+
+        <button type="button" onclick="document.getElementById('teste06').style.display='block'">Mágica!</button>
+    
+        <!---->
+        <script>
+            function nossaFuncao() {
+                document.getElementById('teste07').innerHTML = "Vitória Williams de Andrade :)";
+            }
+        </script>
+    </head>
+    </body>
+
+        <h2>Nosso JavaScript</h2>
+
+        <p id="teste07">Mudando o conteúdo do parágrafo</p>
+
+        <button type="button" onclick="nossaFuncao()">Clica aquis</button>
+
+    </body>
+
+    
+</html>

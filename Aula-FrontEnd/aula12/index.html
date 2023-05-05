@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8"/>
+    <body>
+        <h1>JAVASCRIPT</h1>
+        <h2>Vitória Williams de Andrade</h2>
+        <p>Vamos mudar os atributos de nossa página.</p>
+        <p>Com o nosso javascript, vamos mudar os valores do atributo src para trocar link da imagem.</p>
+
+            <button id="Ligar" onclick="ligarImagem()">Botão Ligar</button>
+            <div id="div">
+                <img id="imagem01" src="../imagens/js.png" style="width:100px">
+            </div>
+            <button id="Desligar" onclick="desligarImagem()">Botão Desligar</button>
+        <script>
+            // <!--Esta constante guarda o valor de referência ao botão de Ligar-->
+            const botaoLigar = document.getElementById('Ligar');
+            // <!--Esta constante guarda o valor de referência ao botão de Desligar-->
+            const botaoDesligar = document.getElementById('Desligar');
+            // <!--Esta constante guarda o valor de referência da imagem-->
+            const imagem = document.getElementById('imagem01'); 
+
+            const div= document.getElementById('div');
+            
+            function desligarImagem(){
+                div.removeChild(imagem);
+            }
+            desligarImagem();
+
+            function ligarImagem(){
+                div.appendChild(imagem);
+            }
+        </script>
+    </body>
+</html>
